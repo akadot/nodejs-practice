@@ -1,0 +1,16 @@
+{
+	"users": [
+		{
+			"id": "1638227709736",
+			"name": "Zumiro",
+			"email": "zumiro@gmail.com",
+			"password": "$2b$10$RJvVfK18CJcI0C84B7y4jO3GUBPEThJpwm3u.78HgvReVmTwae00e"
+		},
+		{
+			"id": "1638227725403",
+			"name": "Murilo",
+			"email": "muriloholiveira1@gmail.com",
+			"password": "$2b$10$3MUxoSUPuV4Iub4A0UJtxeEl73wRj8wYWEEkBAh8VTKh/O9u1nL76"
+		}
+	]
+}

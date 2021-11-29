@@ -1,0 +1,129 @@
+<style>
+	html,
+	body {
+		height: 100vh;
+		background-color: #171c28;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+	.container {
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	h1 {
+		color: #171c28;
+	}
+
+	form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-around;
+		width: 50%;
+		height: 50%;
+		padding: 10px 20px;
+		border-radius: 5px;
+		background-color: white;
+		font-size: large;
+	}
+
+
+	form .fields {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: center;
+		width: 100%;
+	}
+
+	.fields input {
+		width: 100%;
+		padding: 10px;
+		border: 1px solid gray;
+		border-radius: 5px;
+	}
+
+	input:focus {
+		border: 1px solid #171c28;
+	}
+
+	.fields label {
+		font-size: large;
+		color: darkslategray;
+	}
+
+	.btn {
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		width: 90%;
+	}
+
+	button {
+		color: #171c28;
+		border: 1px solid #171c28;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px;
+		width: 30%;
+		font-weight: bolder;
+		font-size: large;
+		cursor: pointer;
+	}
+
+	button:hover {
+		background-color: #171c28;
+		color: white;
+		border-color: #171c28;
+	}
+
+	a {
+		text-decoration: none;
+		text-align: center;
+		color: #171c28;
+		border: 1px solid #171c28;
+		border-radius: 5px;
+		background-color: white;
+		padding: 10px;
+		width: 30%;
+		font-weight: bolder;
+		font-size: large;
+		cursor: pointer;
+	}
+
+	a:hover {
+		background-color: #171c28;
+		color: white;
+		border-color: #171c28;
+	}
+</style>
+
+<section class="container">
+
+
+	<form action="/register" method="POST">
+		<h1>Register</h1>
+		<div class="fields">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required>
+		</div>
+		<div class="fields">
+			<label for="email">E-mail</label>
+			<input type="email" id="email" name="email" required>
+		</div>
+		<div class="fields">
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+		</div>
+		<div class="btn">
+
+			<button type="submit">Register</button>
+
+			<a href="/login">Login</a>
+		</div>
+	</form>
+</section>
